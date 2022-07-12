@@ -1,0 +1,18 @@
+import java.util.Scanner;
+ class Number1_Method
+{
+public static void main(String args[])
+{
+int num1,num2;
+System.out.println("Enter Two numbers");
+Scanner obj=new Scanner(System.in);
+num1=obj.nextInt();
+num2=obj.nextInt();
+number(num1,num2);
+}
+public static void number(int a,int b)
+	{
+      System.out.println( "The smallest values is "+Math.min(a, b) );
+	}
+}
+

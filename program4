@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+class Between1_Method 
+{
+	public static void main(String[] args) 
+	{
+		int num1,num2;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the starting range of m");
+		num1=sc.nextInt();
+		System.out.println("enter the ending range of n");
+		num2=sc.nextInt();
+		between(num1,num2);
+	}
+	public static void between(int m,int n)
+	{
+		for(int count=m+1;count<n;count++)
+		{
+			if(count%2==0)
+			{
+				System.out.println(count);
+			}
+		}
+	}
+}

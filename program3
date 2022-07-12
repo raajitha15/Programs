@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+class Natural_Number_Method
+{
+	
+	public static void main(String[]args)
+	{
+		int num1,num2;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the starting range");
+		num1=sc.nextInt();
+		System.out.println("enter the ending range");
+		num2=sc.nextInt();
+		natural(num1,num2);
+		
+	}
+	public static void natural(int m,int n)
+	{
+		for(int i=m;i<=n;i++)
+		{
+			System.out.println(i);
+		}
+	}
+}

@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+class Natural_Number_Check
+{
+	public static void main(String[] args) 
+	{
+		int m,n;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the starting range of m");
+		m=sc.nextInt();
+		System.out.println("enter the ending range of n");
+		n=sc.nextInt();
+		for(int count=m+1;count<n;count++)
+		{
+			
+			System.out.println(count);
+		}
+	}
+}

@@ -1,0 +1,23 @@
+//wap to count the number of even numbers between m to n
+import java.util.Scanner;
+class Between4 
+{
+	public static void main(String[] args) 
+	{
+		int m,n;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the starting range of m");
+		m=sc.nextInt();
+		System.out.println("enter the ending range of n");
+		n=sc.nextInt();
+		int count=0;
+		for(int i=m+1;i<n;i++)
+		{
+		if(i%2==0)
+		{
+			count++;
+		}
+		}
+		System.out.println(count);
+	}
+}

@@ -1,0 +1,21 @@
+//wap to print the numbers of odd numbers between m to n
+import java.util.Scanner;
+class Between2 
+{
+	public static void main(String[] args) 
+	{
+		int m,n;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the starting range of m");
+		m=sc.nextInt();
+		System.out.println("enter the ending range of n");
+		n=sc.nextInt();
+		for(int count=m+1;count<n;count++)
+		{
+			if(count%2!=0)
+			{
+				System.out.println(count);
+			}
+		}
+	}
+}

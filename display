@@ -1,0 +1,27 @@
+//WAP to display digits of a number
+import java.util.Scanner;
+class Display 
+{
+	public static void main(String[] args) 
+	{
+		int digit,sum=0,digit2,num;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		num=sc.nextInt();
+		do
+		{
+			digit=num%10;
+			sum=(sum*10)+digit;
+			num=num/10;
+		}
+		while (num!=0);
+		System.out.println(sum);
+		do
+		{
+			digit2=sum%10;
+			sum=sum/10;
+			System.out.println(digit2);
+		}
+		while (sum!=0);
+	}
+}

@@ -1,0 +1,41 @@
+//automorphic number: a number is containg in the last digit of the square of a number is known as automorphic number
+//WAP to automorphic number
+import java.util.Scanner;
+class	Automorphic  
+{
+	public static void main(String[] args) 
+	{
+		int num,square=0,k;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		num=sc.nextInt();
+		int copynum=num;
+		square=num*num;
+		k=0;
+		while(num!=0)
+		{
+			if(num%10==square%10)
+			{
+				k=1;
+				
+			}
+			else
+			{
+				k=0;
+				
+			}
+		
+
+      num=num/10;
+	  square=square/10;
+		}
+	  if(k==1)
+		{
+		  System.out.println(copynum+   " is an automorphic number ");
+		}
+		else
+		{
+			System.out.println(copynum+  " is  not an automorphic number ");
+		}
+	}
+}

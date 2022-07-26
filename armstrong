@@ -1,0 +1,41 @@
+//armstrong number
+/*armstrong number: it is a positive n digit number that is equal to the sum of the nth powers of thier digits*/
+import java.util.Scanner;
+class	Armstrong 
+{
+	public static void main(String[] args) 
+	{
+		int num,sum=0;
+		int r,c=0,power=1;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+	    num=sc.nextInt();
+		int temp=num;
+		while(temp!=0)
+		{
+			c++;
+			r=temp%10;
+			temp=temp/10;
+		}
+		
+		while(temp!=0)
+		{
+			r=temp%10;
+			power=1;
+			for(int i=1;i<=c;i++)
+			{
+				power=power*r;
+			}
+			sum=sum+power;
+			temp=temp/10;
+		}
+		if(num==sum)
+		{
+			System.out.println(num+"is armstrong number");
+		}
+		else
+		{
+			System.out.println(num+"is not armstrong number");
+		}
+	}
+}

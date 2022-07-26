@@ -1,0 +1,33 @@
+//strong number: a number whose sum of digits factorial is equal to the number is known as a strong number
+//WAP to find the factorial of a number
+import java.util.Scanner;
+class Factorial 
+{
+	public static void main(String[] args) 
+	{
+		int num,r,sum=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		num=sc.nextInt();
+		int temp=num;
+		while(temp!=0)
+		{
+			r=temp%10;
+			int fact=1;
+			for(int i=1;i<=r;i++)
+			{
+				fact=fact*i;
+			}
+			sum=sum+fact;
+			temp=temp/10;
+		}
+		if(num==sum)
+		{
+			System.out.println("given number is strong number");
+		}
+		else
+		{
+			System.out.println("given number is not a strong number");
+		}
+	}
+}

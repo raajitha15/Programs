@@ -1,0 +1,28 @@
+/*digital product: The program must print the digital product of the number.
+The digital product of a number is defined as the recursive product of digits of a number till it reaches a single digit.
+Explanation: 4563 is 4*5*6*3=360 as 360 is three digits again multiply 3*6*0=0.
+WAP to print digital sum of number*/
+
+import java.util.Scanner;
+class Digital_Product 
+{
+	public static void main(String[] args) 
+	{
+		int num,product=1;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		num=sc.nextInt();
+		while(num>0||product>9)
+		{
+		if(num==0)
+		{
+			num=product;
+			product=1;
+		}
+		product*=num%10;
+		num=num/10;
+		}
+
+		System.out.println("product of digits "+product);
+	}
+}

@@ -1,0 +1,29 @@
+//WAP to harshad number
+//Harshad number: sum of the digits should be divible by the number.
+import java.util.Scanner;
+class Harshad 
+{
+	public static void main(String[] args) 
+	{
+		int num,digit,sum=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		num=sc.nextInt();
+		int copynum=num;
+		do
+		{
+			digit=num%10;
+			sum=sum+digit;
+			num=num/10;
+		}
+		while (num!=0);
+		if(copynum%sum==0)
+		{
+			System.out.println(copynum+ " it is harshad number ");
+		}
+		else
+		{
+			System.out.println(copynum+ " it is not a harshad number ");
+		}
+	}
+}

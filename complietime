@@ -1,0 +1,17 @@
+class CompileTimePolymorphism 
+{
+	static void display()  
+	{
+		System.out.println("display without paramaters");
+	}
+	static void display(String value)
+	{
+		System.out.println("display with parameters");
+	}
+	public static void main(String[]args)
+	{
+		display();
+		display("Ploymorphism");
+	}
+}
+

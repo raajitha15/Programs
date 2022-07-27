@@ -1,0 +1,20 @@
+class RunTimePolymorphism 
+{
+	  void display() 
+	{
+		System.out.println("overriding method");
+	}
+	 
+}
+	class Main extends RunTimePolymorphism
+	{
+		void display()
+	{
+		System.out.println("method overriding");
+	}
+	public static void main(String[]args)
+	{
+		RunTimePolymorphism r=new Main();
+		r.display();
+	}
+}

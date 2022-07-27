@@ -1,0 +1,41 @@
+//neon number: sum of the digits should be equal to the actual number
+import java.util.Scanner;
+class Neon 
+{
+	public static boolean isneon(int num)
+	{
+		int sum=0;
+		int square=num*num;
+		boolean b=false;
+		while(square>0)
+		{
+          int d=square%10;
+		  sum=sum+d;
+		  square=square/10;
+		}
+		if(sum==num)
+		{
+			b=true;
+		}
+		else
+		{
+			b=false;
+		}
+		return b;
+	}
+	public static void main(String[]args)
+	{
+		int num;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		num=sc.nextInt();
+		if(isneon(num))
+		{
+			System.out.println(num+ " it is a neon number");
+		}
+		else
+		{
+			System.out.println(num+ " it is not a neon number");
+		}
+	}
+}
